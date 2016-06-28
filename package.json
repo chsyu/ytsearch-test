@@ -2,10 +2,10 @@
   "name": "react-node-starter",
   "version": "0.2.0",
   "description": "an example for deploying a React + NodeJS app to Heroku",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "start": "node app.js",
     "postinstall": "webpack -p --config webpack.prod.config.js"
   },
   "author": "",

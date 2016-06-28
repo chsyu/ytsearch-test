@@ -6,9 +6,11 @@ module.exports = {
     './src/index'
   ],
   module: {
-    loaders: [
-      { test: /\.js?$/, loader: 'babel', exclude: /node_modules/ },
-    ]
+    loaders: [{
+      test: /\.js?$/,
+      loader: 'babel',
+      exclude: /node_modules/
+    }]
   },
   resolve: {
     extensions: ['', '.js']
