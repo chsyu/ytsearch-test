@@ -10,15 +10,15 @@ if(process.env.NODE_ENV !== 'production') {
   var webpack = require('webpack');
   var config = require('./webpack.config');
   var compiler = webpack(config);
-  
+
   app.use(webpackDevMiddleware(compiler, { noInfo: true, publicPath: config.output.publicPath }));
   app.use(webpackHotMiddleware(compiler));
 }
 
-app.use(express.static(path.join(__dirname, 'dist')));
+app.use(express.static(path.join(__dirname, '/public')));
 
 app.get('/', function(request, response) {
-  response.sendFile(__dirname + '/dist/index.html')
+  response.sendFile(__dirname + 'index.html')
 });
 
 app.listen(PORT, function(error) {
