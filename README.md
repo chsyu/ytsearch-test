@@ -1,1 +1,1 @@
-# React + Node Starter with YTSearch
+# React + Node + Heroku Starter with YTSearch
