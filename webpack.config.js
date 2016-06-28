@@ -23,10 +23,5 @@ module.exports = {
   devServer: {
     contentBase: './dist',
     hot: true
-  },
-  plugins: [
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
-  ]
+  }
 };
